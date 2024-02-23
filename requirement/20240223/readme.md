@@ -35,7 +35,7 @@ Get Started，变成：立即尝试（Try it now），链接到平台 www.kuosan
 Email: service@tapall.ai
 Location: 深圳市南山区留仙大道南山智园崇文园区
 
-英文：Nanshan Zhiyuan (Intelligent Park) Chongwen Park, ShenZhen, , China
+英文：Nanshan Zhiyuan (Intelligent Park) Chongwen Park, ShenZhen, 518055, China
 
 地图先不要了
 
