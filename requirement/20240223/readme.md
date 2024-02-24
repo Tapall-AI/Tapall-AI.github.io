@@ -25,7 +25,7 @@ Get Started，变成：立即尝试（Try it now），链接到平台 www.kuosan
 
 每个选项，对应一组视频，展示在区域 3，区域 3 的每个模块，显示一个视频（可以重复使用 assets/vid/place-anything 或 assets/vid/meta-human 里面的 mp4 文件做测试使用）后续会持续增加视频在这两个文件夹（目前的素材不一定对应主题，只是为了测试能展示视频）
 
-### 5 
+### 5 Contact（联系我们）
 如下图，同样的，区域 1，先写成：预留区域（Reserved Area)
 
 <img src="./contact.jpg"/>
