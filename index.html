@@ -8,6 +8,7 @@
   <title>TAPALL</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta id="i18n_page-lang" content="common">
 
   <!-- Favicons -->
   <link href="assets/img/tapall-icon.jpg" rel="icon">
@@ -42,11 +43,15 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
   <div class="hero-container">
+    <label for="language"></label><select id="language" style="display: none;">
+      <option value="zh-CN">中文</option>
+      <option value="en">英语</option>
+    </select>
     <h1>AI原生的视频广告生成与植入</h1>
     <h2>AI-Native Video Advertising: Generation and Implantation.</h2>
     <h2>智能生成，一触即达</h2>
     <h2>TAP IT, ALL YOU NEED</h2>
-    <a href="https://www.kuosanyinzi.com" class="btn-get-started scrollto">Try it now</a>
+    <a href="https://www.kuosanyinzi.com" class="btn-get-started scrollto i18n" name="TryItNow"></a>
   </div>
 </section><!-- End Hero -->
 
@@ -60,11 +65,17 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">About</a></li>
-        <!--          <li><a class="nav-link scrollto" href="#services">Services</a></li>-->
-        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <li><a class="nav-link scrollto active i18n" href="#hero" name="nav-home"></a></li>
+        <li><a class="nav-link scrollto i18n" href="#about" name="nav-about"></a></li>
+        <li><a class="nav-link scrollto i18n" href="#portfolio" name="nav-portfolio"></a></li>
+        <li><a class="nav-link scrollto i18n" href="#contact" name="nav-contact"></a></li>
+        <li class="dropdown" id="lang-selector">
+          <a href="#"><span class="i18n" name="nav-lang"></span><i class="bi bi-chevron-right"></i></a>
+          <ul>
+            <li value="zh-CN"><a href="#">中文</a></li>
+            <li value="en"><a href="#">English</a></li>
+          </ul>
+        </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -83,20 +94,15 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>About Us</h2>
+        <h2 class="i18n" name="about-us"></h2>
       </div>
 
       <div class="row content">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-          <p>
-            塔普智能专注于为企业与个人提供AI原生的视频生成与植入服务，致力于构建定制化的AI视频生产线，以满足不同用户的独特需求。
-            通过旗下平台
-            <a href="https://www.kuosanyinzi.com">
-              扩散因子
-            </a>
-            ，我们为用户提供包括AI视频编辑、AI数字人以及图文转视频等在内的智能产品服务。
-          </p>
+            <text class="i18n" name="about-p-left"></text>
+            <a href="https://www.kuosanyinzi.com" class="i18n" name="platform-name"></a>
+            <text class="i18n" name="about-p-right"></text>
         </div>
         <div class="col-lg-2"></div>
       </div>
@@ -109,16 +115,14 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>
-          预留区域
-        </p>
+        <h2 class="i18n" name="nav-portfolio"></h2>
+        <p class="i18n" name="reserved-area"></p>
       </div>
       <!--        原作者的typo???    -->
       <ul id="portfolio-flters" class="d-flex justify-content-center">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-place-anything">AI视频植入</li>
-        <li data-filter=".filter-meta-human">AI数字人</li>
+        <li data-filter="*" class="filter-active i18n" name="all"></li>
+        <li data-filter=".filter-place-anything" class="i18n" name="ai-place-anything"></li>
+        <li data-filter=".filter-meta-human" class="i18n" name="ai-meta-human"></li>
       </ul>
 
       <div class="row portfolio-container">
@@ -188,8 +192,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Contact</h2>
-        <p>预留区域</p>
+        <h2 class="i18n" name="nav-contact"></h2>
+        <p class="i18n" name="reserved-area"></p>
       </div>
 
       <div class="row mt-5">
@@ -197,19 +201,19 @@
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>深圳市南山区留仙大道南山智园崇文园区</p>
+              <h4 class="i18n" name="location"></h4>
+              <p class="i18n" name="location-info"></p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
+              <h4 class="i18n" name="email"></h4>
               <p>service@tapall.ai</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>Wechat:</h4>
+              <h4 class="i18n" name="wechat"></h4>
               <img src="assets/img/contact_qrcode.png" alt="contact-qrcode" style="margin-left: 5%; object-fit: fill; max-width: 50%;"/>
             </div>
 
@@ -272,7 +276,7 @@
 
   <div class="container footer-bottom clearfix">
     <div class="copyright">
-      &copy; Copyright <strong><span>TAPALL</span></strong>. All Rights Reserved??这个能改吗？？
+      &copy; Copyright <strong><span>TAPALL</span></strong>. All Rights Reserved
     </div>
 
   </div>
@@ -293,6 +297,10 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
+<!-- i18n js file -->
+<script src="./i18n/jquery.js"></script>
+<script src="./i18n/jquery.i18n.properties.js"></script>
+<script src="./i18n/lang-sel.js"></script>
 </body>
 
 </html>
