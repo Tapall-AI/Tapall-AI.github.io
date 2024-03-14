@@ -166,5 +166,6 @@ function changeLang(lang) {
         expires: 30,
         path: '/'
     });
-    location.reload();
+    // location.reload();
+    execI18n();
 }
