@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar > ul > li {
   white-space: nowrap;
-  padding: 10px 12px;
+  padding: 10px 20px;
 }
 
 .navbar a, .navbar a:focus {
@@ -260,7 +260,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 12px;
+  /*left: -80px;*/
+  right: 0;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -330,6 +331,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  margin-left: auto;
 }
 
 @media (max-width: 991px) {

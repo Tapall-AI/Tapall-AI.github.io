@@ -1,12 +1,16 @@
 .my-email-form button[type="button"] {
-    background: #ff7f5d;
-    border: 0;
-    padding: 10px 24px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 4px;
+  background: #ff7f5d;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
 }
 
 .my-email-form button[type="button"]:hover {
-    background: #ff9377;
+  background: #ff9377;
 }
+
+/*.lang-div {*/
+/*  margin-right: 10%;*/
+/*}*/

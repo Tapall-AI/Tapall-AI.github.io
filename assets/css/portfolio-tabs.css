@@ -1,10 +1,6 @@
 /*--------------------------------------------------------------
 # portfolio
 --------------------------------------------------------------*/
-/*.portfolio {*/
-/*    padding: 40px 0 0 0;*/
-/*    background: white;*/
-/*}*/
 
 .portfolio .nav-tabs {
     border: 0;
@@ -24,7 +20,8 @@
 }
 
 .portfolio .nav-link:hover h4 {
-    color: #7cc576;
+    /*color: #7cc576;*/
+    color: #ffa790;
 }
 
 .portfolio .nav-link p {
@@ -37,7 +34,8 @@
 }
 
 .portfolio .nav-link.active h4 {
-    color: #7cc576;
+    /*color: #7cc576;*/
+    color: #ff7f5d;
 }
 
 .portfolio .tab-pane.active {

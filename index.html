@@ -33,6 +33,7 @@
   <!-- customized css file -->
   <link href="assets/css/additional.css" rel="stylesheet">
   <link href="assets/css/portfolio-tabs.css" rel="stylesheet">
+  <link href="assets/css/swiper-diy.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Valera - v4.3.0
@@ -50,30 +51,44 @@
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">TAPALL</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html" style="font-family: 'Arial Black',serif">TAPALL</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active i18n" href="#hero" locale="nav-home"></a></li>
-          <li><a class="nav-link scrollto i18n" href="#about" locale="nav-about"></a></li>
-          <li><a class="nav-link scrollto i18n" href="#portfolio" locale="nav-portfolio"></a></li>
-          <li><a class="nav-link scrollto i18n" href="#contact" locale="nav-contact"></a></li>
-          <li class="dropdown" id="lang-selector">
-            <a href="#"><span class="i18n" locale="nav-lang"></span><i class="bi bi-chevron-right"></i></a>
-            <ul>
-              <li value="zh-CN"><a href="#">中文</a></li>
-              <li value="en"><a href="#">English</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="header-social-links d-flex align-items-center">
-        <!--    占位用，保持原有布局    -->
+      <div style="width: 63%;">
+        <nav id="navbar" class="navbar order-last order-lg-0" style="margin-left: auto;">
+          <ul style="width: 100%;">
+            <li><a class="nav-link scrollto active i18n" href="#hero" locale="nav-home"></a></li>
+            <li><a class="nav-link scrollto i18n" href="#about" locale="nav-about"></a></li>
+            <li><a class="nav-link scrollto i18n" href="#portfolio" locale="nav-portfolio"></a></li>
+            <li style="margin-right: auto;"><a class="nav-link scrollto i18n" href="#contact" locale="nav-contact"></a>
+            </li>
+            <li class="dropdown" id="lang-selector">
+              <a href="#"><span class="i18n" locale="nav-lang"></span><i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li value="zh-CN"><a href="#">中文</a></li>
+                <li value="en"><a href="#">English</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
       </div>
+
+
+      <!--      <div class="lang-div">-->
+      <!--        <nav class="navbar">-->
+      <!--          <ul>-->
+      <!--            <li class="dropdown" id="lang-selector">-->
+      <!--              <a href="#"><span class="i18n" locale="nav-lang"></span><i class="bi bi-chevron-right"></i></a>-->
+      <!--              <ul>-->
+      <!--                <li value="zh-CN"><a href="#">中文</a></li>-->
+      <!--                <li value="en"><a href="#">English</a></li>-->
+      <!--              </ul>-->
+      <!--            </li>-->
+      <!--          </ul>-->
+      <!--        </nav>-->
+      <!--      </div>-->
 
     </div>
   </header><!-- End Header -->
@@ -113,6 +128,49 @@
     </div>
   </section><!-- End About Section -->
 
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row counters">
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-purecounter-start="0"
+                data-purecounter-end="66"
+                data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p class="i18n" locale="counts-enterprise"></p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-purecounter-start="0"
+                data-purecounter-end="666"
+                data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p class="i18n" locale="counts-individual"></p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-purecounter-start="0"
+                data-purecounter-end="888"
+                data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p class="i18n" locale="counts-generated"></p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-purecounter-start="0"
+                data-purecounter-end="88"
+                data-purecounter-duration="1"
+                class="purecounter"></span>
+          <p class="i18n" locale="counts-support"></p>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container">
@@ -144,7 +202,7 @@
                 </a>
               </li>
               <li class="nav-item mt-2">
-                <a class="nav-link" data-bs-toggle="tab" href="#portfolio-tbu">
+                <a class="nav-link" data-bs-toggle="tab" disabled>
                   <h4 class="i18n" locale="portfolio-to-be-updated"></h4>
                 </a>
               </li>
@@ -157,13 +215,19 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div>
-                        <video class="portfolio-video" src="assets/vid/place-anything/demo1.mp4" muted autoplay
+                        <video class="portfolio-video"
+                               src="assets/vid/place-anything/demo1.mp4"
+                               muted
+                               autoplay
                                loop="loop"></video>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div>
-                        <video class="portfolio-video" src="assets/vid/place-anything/demo2.mp4" muted autoplay
+                        <video class="portfolio-video"
+                               src="assets/vid/place-anything/demo2.mp4"
+                               muted
+                               autoplay
                                loop="loop"></video>
                       </div>
                     </div>
@@ -178,20 +242,27 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div>
-                        <video class="portfolio-video" src="assets/vid/meta-human/blur_home2_after.mp4" muted autoplay
-                               loop="loop"></video>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div>
-                        <video class="portfolio-video" src="assets/vid/meta-human/new_blur_makeup_after.mp4" muted
+                        <video class="portfolio-video"
+                               src="assets/vid/meta-human/blur_home2_after.mp4"
+                               muted
                                autoplay
                                loop="loop"></video>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div>
-                        <video class="portfolio-video" src="assets/vid/meta-human/sora_sea_result.mp4" muted
+                        <video class="portfolio-video"
+                               src="assets/vid/meta-human/new_blur_makeup_after.mp4"
+                               muted
+                               autoplay
+                               loop="loop"></video>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div>
+                        <video class="portfolio-video"
+                               src="assets/vid/meta-human/sora_sea_result.mp4"
+                               muted
                                autoplay
                                loop="loop"></video>
                       </div>
@@ -207,13 +278,19 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div>
-                        <video class="portfolio-video" src="assets/vid/place-anything/demo1.mp4" muted autoplay
+                        <video class="portfolio-video"
+                               src="assets/vid/place-anything/demo1.mp4"
+                               muted
+                               autoplay
                                loop="loop"></video>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div>
-                        <video class="portfolio-video" src="assets/vid/place-anything/demo2.mp4" muted autoplay
+                        <video class="portfolio-video"
+                               src="assets/vid/place-anything/demo2.mp4"
+                               muted
+                               autoplay
                                loop="loop"></video>
                       </div>
                     </div>
@@ -229,71 +306,6 @@
         </div>
 
       </div>
-      <!--        原作者的typo???    -->
-      <!--      <ul id="portfolio-flters" class="d-flex justify-content-center">-->
-      <!--        <li data-filter="*" class="filter-active i18n" locale="all"></li>-->
-      <!--        <li data-filter=".filter-place-anything" class="i18n" locale="ai-place-anything"></li>-->
-      <!--        <li data-filter=".filter-meta-human" class="i18n" locale="ai-meta-human"></li>-->
-      <!--      </ul>-->
-
-      <!--      <div class="row portfolio-container">-->
-
-      <!--        <div class="col-lg-6 portfolio-item filter-place-anything">-->
-      <!--          <div>-->
-      <!--            <video class="portfolio-video" src="assets/vid/place-anything/demo1.mp4" muted autoplay loop="loop"></video>-->
-      <!--          </div>-->
-      <!--          <div class="portfolio-info">-->
-      <!--            <h4>AI视频植入 Demo1</h4>-->
-      <!--            <p>Demo</p>-->
-      <!--            &lt;!&ndash;              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>&ndash;&gt;-->
-      <!--            &lt;!&ndash;              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>&ndash;&gt;-->
-      <!--          </div>-->
-      <!--        </div>-->
-
-      <!--        <div class="col-lg-6 portfolio-item filter-place-anything">-->
-      <!--          <div>-->
-      <!--            <video class="portfolio-video" src="assets/vid/place-anything/demo2.mp4" muted autoplay loop="loop"></video>-->
-      <!--          </div>-->
-      <!--          <div class="portfolio-info">-->
-      <!--            <h4>AI视频植入 Demo2</h4>-->
-      <!--            <p>Demo</p>-->
-      <!--          </div>-->
-      <!--        </div>-->
-
-      <!--        <div class="col-lg-6 portfolio-item filter-meta-human">-->
-      <!--          <div>-->
-      <!--            <video class="portfolio-video" src="assets/vid/meta-human/sora_sea_result.mp4" muted autoplay-->
-      <!--                   loop="loop"></video>-->
-      <!--          </div>-->
-      <!--          <div class="portfolio-info">-->
-      <!--            <h4>AI数字人 Demo1</h4>-->
-      <!--            <p>Demo</p>-->
-      <!--          </div>-->
-      <!--        </div>-->
-
-      <!--        <div class="col-lg-6 portfolio-item filter-meta-human">-->
-      <!--          <div>-->
-      <!--            <video class="portfolio-video" src="assets/vid/meta-human/blur_home2_after.mp4" muted autoplay-->
-      <!--                   loop="loop"></video>-->
-      <!--          </div>-->
-      <!--          <div class="portfolio-info">-->
-      <!--            <h4>AI数字人 Demo2</h4>-->
-      <!--            <p>Demo</p>-->
-      <!--          </div>-->
-      <!--        </div>-->
-
-      <!--        <div class="col-lg-6 portfolio-item filter-meta-human">-->
-      <!--          <div>-->
-      <!--            <video class="portfolio-video" src="assets/vid/meta-human/new_blur_makeup_after.mp4" muted autoplay-->
-      <!--                   loop="loop"></video>-->
-      <!--          </div>-->
-      <!--          <div class="portfolio-info">-->
-      <!--            <h4>AI数字人 Demo3</h4>-->
-      <!--            <p>Demo</p>-->
-      <!--          </div>-->
-      <!--        </div>-->
-
-      <!--      </div>-->
 
     </div>
   </section><!-- End Portfolio Section -->
@@ -304,7 +316,6 @@
 
       <div class="section-title">
         <h2 class="i18n" locale="nav-contact"></h2>
-        <p class="i18n" locale="reserved-area"></p>
       </div>
 
       <div class="row mt-5">
