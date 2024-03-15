@@ -1,28 +1,50 @@
 .portfolio-swiper .swiper-pagination {
-    /*margin-top: 15px;*/
-    /*position: relative;*/
+  /*margin-top: 15px;*/
+  /*position: relative;*/
 }
 
 .portfolio-swiper .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #ff7f5d;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #ff7f5d;
 }
 
 .portfolio-swiper .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #ff7f5d;
+  background-color: #ff7f5d;
 }
 
 .portfolio-swiper .swiper-button-prev {
-    color: #ff7f5d;
+  width: 10%;
+  height: 98%;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  color: #ff7f5d;
+  opacity: 0;
+  background-color: rgba(94, 94, 94, 0.3);
+  transition: ease-out 0.3s;
 }
 
-/*.portfolio-swiper .swiper-button-prev:hover {*/
-/*    color: #ff7f5d;*/
-/*}*/
+.portfolio-swiper .swiper-button-prev:hover {
+  opacity: 1;
+  transition: ease-in 0.3s;
+}
 
 .portfolio-swiper .swiper-button-next {
-    color: #ff7f5d;
+  width: 10%;
+  height: 98%;
+  right: 0;
+  top: 0;
+  margin-top: 0;
+  color: #ff7f5d;
+  opacity: 0;
+  background-color: rgba(94, 94, 94, 0.3);
+  transition: ease-out 0.3s;
+}
+
+.portfolio-swiper .swiper-button-next:hover {
+  opacity: 1;
+  transition: ease-in 0.3s;
 }

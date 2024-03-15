@@ -1049,9 +1049,8 @@ section {
 }
 
 .portfolio-video {
-  object-fit: fill;
-  max-width: 100%;
-  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
