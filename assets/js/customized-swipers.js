@@ -16,11 +16,12 @@ function initSwiper(selector) {
         },
         on: {
             afterInit: function () {
+                console.log('init')
                 if (this.slides) {
                     this.slides.forEach(
                         function (slide, index) {
                             let video = slide.querySelector('.portfolio-video');
-                            if(video && index === 0) {
+                            if (video && index === 0) {
                                 video.play();
                             }
                         }
@@ -51,15 +52,19 @@ document.querySelectorAll('.portfolio-swiper').forEach(
     }
 );
 
-document.querySelectorAll('.nav-link').forEach(function(tab) {
-    tab.addEventListener('click', function() {
+document.querySelectorAll('.nav-link').forEach(function (tab) {
+    tab.addEventListener('click', function () {
         // 延迟一段时间以确保标签页切换完成
-        setTimeout(function() {
-            // 初始化当前激活的 Swiper 并播放视频
-            let activeSwiper = document.querySelector(tab.getAttribute('href')).querySelector('.portfolio-swiper');
-            if (activeSwiper) {
-                initSwiper(activeSwiper);
+        setTimeout(function () {
+            let activeSwiperEle = document.querySelector(tab.getAttribute('href')).querySelector('.portfolio-swiper');
+            if (activeSwiperEle && activeSwiperEle.swiper) {
+                let currentSwiper = activeSwiperEle.swiper;
+                let video = currentSwiper.slides[currentSwiper.activeIndex].querySelector('.portfolio-video');
+                if (video) {
+                    video.currentTime = 0;
+                    video.play();
+                }
             }
-        }, 100);
+        }, 50);
     });
 });
