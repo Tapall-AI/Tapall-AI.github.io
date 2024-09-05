@@ -11,13 +11,13 @@
   <meta id="i18n_page-lang" content="common">
 
   <!-- Favicons -->
-  <link href="assets/img/tapall-icon.jpg" rel="icon">
-  <link href="assets/img/tapall-icon.jpg" rel="apple-touch-icon">
+  <link href="favicon.ico" rel="icon">
+  <link href="favicon.ico" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,91 +45,150 @@
 
 <body>
 
-<!-- ======= Hero Section ======= -->
-<div id="hero">
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center ">
-    <div class="container-fluid d-flex align-items-center justify-content-lg-between">
+  <!-- ======= Hero Section ======= -->
+  <div id="hero">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center ">
+      <div class="container-fluid d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html" style="font-family: 'Arial Black',serif">TAPALL</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1 class="logo me-auto me-lg-0"><a href="index.html" style="font-family: 'Arial Black',serif">
+            <img src="assets/img/logo@2x.png" class="logo-img" />
+          </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <div style="width: 63%;">
-        <nav id="navbar" class="navbar order-last order-lg-0" style="margin-left: auto;">
-          <ul style="width: 100%;">
-            <li><a class="nav-link scrollto active i18n" href="#hero" locale="nav-home"></a></li>
-            <li><a class="nav-link scrollto i18n" href="#about" locale="nav-about"></a></li>
-            <li><a class="nav-link scrollto i18n" href="#portfolio" locale="nav-portfolio"></a></li>
-            <li style="margin-right: auto;"><a class="nav-link scrollto i18n" href="#contact" locale="nav-contact"></a>
-            </li>
-            <li class="dropdown" id="lang-selector">
-              <a href="#"><span class="i18n" locale="nav-lang"></span><i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li value="zh-CN"><a href="#">中文</a></li>
-                <li value="en"><a href="#">English</a></li>
-              </ul>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-      </div>
+        <div>
+          <nav id="navbar" class="navbar order-last order-lg-0" style="margin-left: auto;">
+            <ul style="width: 100%;">
+              <li><a class="nav-link scrollto active i18n" href="#hero" locale="nav-home"></a></li>
+              <li><a class="nav-link scrollto i18n" href="#about" locale="nav-about"></a></li>
+              <li><a class="nav-link scrollto i18n" href="#portfolio" locale="nav-portfolio"></a></li>
+              <li style="margin-right: auto;"><a class="nav-link scrollto i18n" href="#contact"
+                  locale="nav-contact"></a>
+              </li>
+              <li class="dropdown" id="lang-selector">
+                <a href="#">
+                  <img src="assets/img/lang.png" class="dropdown-lang" />
 
-
-      <!--      <div class="lang-div">-->
-      <!--        <nav class="navbar">-->
-      <!--          <ul>-->
-      <!--            <li class="dropdown" id="lang-selector">-->
-      <!--              <a href="#"><span class="i18n" locale="nav-lang"></span><i class="bi bi-chevron-right"></i></a>-->
-      <!--              <ul>-->
-      <!--                <li value="zh-CN"><a href="#">中文</a></li>-->
-      <!--                <li value="en"><a href="#">English</a></li>-->
-      <!--              </ul>-->
-      <!--            </li>-->
-      <!--          </ul>-->
-      <!--        </nav>-->
-      <!--      </div>-->
-
-    </div>
-  </header><!-- End Header -->
-  <div class="hero-container">
-    <label for="language"></label><select id="language" style="display: none;">
-    <option value="zh-CN">中文</option>
-    <option value="en">英语</option>
-  </select>
-    <h1 class="i18n" locale="title"></h1>
-    <h1 class="i18n" locale="title2"></h1>
-    <h2 class="i18n" locale="title-foot"></h2>
-    <a href="https://www.kuosanyinzi.com" class="btn-get-started scrollto i18n" locale="TryItNow"></a>
-  </div>
-</div><!-- End Hero -->
-
-
-<main id="main">
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 class="i18n" locale="about-us"></h2>
-      </div>
-
-      <div class="row content">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-          <text class="i18n" locale="about-p-left"></text>
-          <a href="https://www.kuosanyinzi.com" class="i18n" locale="platform-name"></a>
-          <text class="i18n" locale="about-p-right"></text>
+                </a>
+                <ul>
+                  <li value="zh-CN"><a href="#">中文</a></li>
+                  <li value="en"><a href="#">English</a></li>
+                </ul>
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
         </div>
-        <div class="col-lg-2"></div>
+
+
+        <!--      <div class="lang-div">-->
+        <!--        <nav class="navbar">-->
+        <!--          <ul>-->
+        <!--            <li class="dropdown" id="lang-selector">-->
+        <!--              <a href="#"><span class="i18n" locale="nav-lang"></span><i class="bi bi-chevron-right"></i></a>-->
+        <!--              <ul>-->
+        <!--                <li value="zh-CN"><a href="#">中文</a></li>-->
+        <!--                <li value="en"><a href="#">English</a></li>-->
+        <!--              </ul>-->
+        <!--            </li>-->
+        <!--          </ul>-->
+        <!--        </nav>-->
+        <!--      </div>-->
+
       </div>
-
+    </header><!-- End Header -->
+    <div class="hero-container">
+      <!-- <label for="language"></label><select id="language" style="display: none;">
+        <option value="zh-CN">中文</option>
+        <option value="en">英语</option>
+      </select> -->
+      <div class="banner">
+        <div class="banner-left">
+          <h1 class="i18n blue-title" locale="title-foot"></h1>
+          <h1 class="i18n black-title" locale="title"></h1>
+          <a href="https://www.kuosanyinzi.com" class="btn-get-started">
+            <span class=" scrollto i18n" locale="TryItNow">
+            </span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+        <div class="banner-right">
+          <img src="assets/img/hero-right.png" />
+        </div>
+      </div>
+      <!-- <h1 class="i18n" locale="title2"></h1> -->
     </div>
-  </section><!-- End About Section -->
+  </div><!-- End Hero -->
 
-  <!-- ======= Counts Section ======= -->
-  <!-- <section id="counts" class="counts">
+
+  <div id="statistics" class="statistics">
+    <div class="statistics-list">
+      <div class="statistics-item">
+        <div class="detail">
+          <span class="num">4617</span>
+          <span class="unit">万+</span>
+        </div>
+        <div class="title">
+          创意合成总量
+        </div>
+      </div>
+      <div class="statistics-item">
+        <div class="detail">
+          <span class="num">4617</span>
+          <span class="unit">万+</span>
+        </div>
+        <div class="title">
+          创意合成总量
+        </div>
+      </div>
+      <div class="statistics-item">
+        <div class="detail">
+          <span class="num">4617</span>
+          <span class="unit">万+</span>
+        </div>
+        <div class="title">
+          创意合成总量
+        </div>
+      </div>
+      <div class="statistics-item">
+        <div class="detail">
+          <span class="num">4617</span>
+          <span class="unit">万+</span>
+        </div>
+        <div class="title">
+          创意合成总量
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 class="i18n" locale="about-us"></h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <text class="i18n" locale="about-p-left"></text>
+            <a href="https://www.kuosanyinzi.com" class="i18n" locale="platform-name"></a>
+            <text class="i18n" locale="about-p-right"></text>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <!-- <section id="counts" class="counts">
     <div class="container">
 
       <div class="row counters">
@@ -169,238 +228,235 @@
       </div>
 
     </div> -->
-  </section><!-- End Counts Section -->
+    <!-- </section> -->
+    <!-- End Counts Section -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 class="i18n" locale="nav-portfolio"></h2>
-      </div>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#portfolio-place-anything">
-                  <h4 class="i18n" locale="portfolio-ai-insertion"></h4>
-                  <p class="i18n" locale="pai-info"></p>
-                </a>
-              </li>
-              <li class="nav-item mt-2">
-                <a class="nav-link" data-bs-toggle="tab" href="#portfolio-meta-human">
-                  <h4 class="i18n" locale="portfolio-meta-human"></h4>
-                  <p class="i18n" locale="pmh-info"></p>
-                </a>
-              </li>
-              <li class="nav-item mt-2">
-                <a class="nav-link" data-bs-toggle="tab" href="#portfolio-t2v-gen">
-                  <h4 class="i18n" locale="portfolio-t2v-gen"></h4>
-                  <p class="i18n" locale="ptg-info"></p>
-                </a>
-              </li>
-              <li class="nav-item mt-2">
-                <a class="nav-link" data-bs-toggle="tab" disabled>
-                  <h4 class="i18n" locale="portfolio-to-be-updated"></h4>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="portfolio-place-anything">
-                <div class="swiper-container portfolio-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div>
-                        <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
-                               src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/demo1.mp4"
-                               muted
-                               loop="loop"></video>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div>
-                        <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
-                               src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/demo2.mp4"
-                               muted
-                               loop="loop"></video>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-              <div class="tab-pane" id="portfolio-meta-human">
-                <div class="swiper-container portfolio-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div>
-                        <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
-                               src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/show2.mp4"
-                               muted
-                               loop="loop"></video>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-              <div class="tab-pane" id="portfolio-t2v-gen">
-                <div class="swiper-container portfolio-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div>
-                        <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
-                               src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/show1.mp4"
-                               muted
-                               loop="loop"></video>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-              <div class="tab-pane" id="portfolio-tbu"></div>
-            </div>
-          </div>
+        <div class="section-title">
+          <h2 class="i18n" locale="nav-portfolio"></h2>
         </div>
+        <div class="container">
 
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 class="i18n" locale="nav-contact"></h2>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-lg-4">
-          <div class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-              <h4 class="i18n" locale="location"></h4>
-              <p class="i18n" locale="location-info"></p>
+          <div class="row">
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#portfolio-place-anything">
+                    <h4 class="i18n" locale="portfolio-ai-insertion"></h4>
+                    <p class="i18n" locale="pai-info"></p>
+                  </a>
+                </li>
+                <li class="nav-item mt-2">
+                  <a class="nav-link" data-bs-toggle="tab" href="#portfolio-meta-human">
+                    <h4 class="i18n" locale="portfolio-meta-human"></h4>
+                    <p class="i18n" locale="pmh-info"></p>
+                  </a>
+                </li>
+                <li class="nav-item mt-2">
+                  <a class="nav-link" data-bs-toggle="tab" href="#portfolio-t2v-gen">
+                    <h4 class="i18n" locale="portfolio-t2v-gen"></h4>
+                    <p class="i18n" locale="ptg-info"></p>
+                  </a>
+                </li>
+                <li class="nav-item mt-2">
+                  <a class="nav-link" data-bs-toggle="tab" disabled>
+                    <h4 class="i18n" locale="portfolio-to-be-updated"></h4>
+                  </a>
+                </li>
+              </ul>
             </div>
-
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4 class="i18n" locale="email"></h4>
-              <p>service@tapall.ai</p>
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="portfolio-place-anything">
+                  <div class="swiper-container portfolio-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div>
+                          <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
+                            src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/demo1.mp4"
+                            muted loop="loop"></video>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div>
+                          <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
+                            src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/demo2.mp4"
+                            muted loop="loop"></video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="portfolio-meta-human">
+                  <div class="swiper-container portfolio-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div>
+                          <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
+                            src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/show2.mp4"
+                            muted loop="loop"></video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="portfolio-t2v-gen">
+                  <div class="swiper-container portfolio-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div>
+                          <video class="portfolio-video" x5-playsinline="" playsinline="" webkit-playsinline=""
+                            src="https://ai-original-1317824441.cos.ap-guangzhou.myqcloud.com/system/website/show1.mp4"
+                            muted loop="loop"></video>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="portfolio-tbu"></div>
+              </div>
             </div>
-
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4 class="i18n" locale="wechat"></h4>
-              <img src="assets/img/contact_qrcode.png" alt="contact-qrcode"
-                   style="margin-left: 5%; object-fit: fill; max-width: 50%;"/>
-            </div>
-
           </div>
 
         </div>
 
-        <div class="col-lg-8 mt-5 mt-lg-0">
+      </div>
+    </section><!-- End Portfolio Section -->
 
-          <form class="my-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control i18n-input" id="name" attr-to-locale="placeholder"
-                       key-name="name-placeholder">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 class="i18n" locale="nav-contact"></h2>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4 class="i18n" locale="location"></h4>
+                <p class="i18n" locale="location-info"></p>
               </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control i18n-input" name="email" id="email" attr-to-locale="placeholder"
-                       key-name="email-placeholder">
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4 class="i18n" locale="email"></h4>
+                <p>service@tapall.ai</p>
               </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4 class="i18n" locale="wechat"></h4>
+                <img src="assets/img/contact_qrcode.png" alt="contact-qrcode"
+                  style="margin-left: 5%; object-fit: fill; max-width: 50%;" />
+              </div>
+
             </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control i18n-input" name="subject" id="subject"
-                     attr-to-locale="placeholder" key-name="subject-placeholder">
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control i18n-input" name="message" rows="5" id="message"
-                        attr-to-locale="placeholder" key-name="msg-placeholder"></textarea>
-            </div>
-            <div class="my-3">
-              <div id="nameError" style="visibility: hidden;"></div>
-              <div id="emailError" style="visibility: hidden;"></div>
-              <div id="messageError" style="visibility: hidden;"></div>
-              <div id="successMessage"></div>
-            </div>
-            <div class="text-center">
-              <button class="i18n" locale="contact-button" type="button" onclick="saveEmail()"></button>
-            </div>
-          </form>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form class="my-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control i18n-input" id="name" attr-to-locale="placeholder"
+                    key-name="name-placeholder">
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control i18n-input" name="email" id="email"
+                    attr-to-locale="placeholder" key-name="email-placeholder">
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control i18n-input" name="subject" id="subject"
+                  attr-to-locale="placeholder" key-name="subject-placeholder">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control i18n-input" name="message" rows="5" id="message"
+                  attr-to-locale="placeholder" key-name="msg-placeholder"></textarea>
+              </div>
+              <div class="my-3">
+                <div id="nameError" style="visibility: hidden;"></div>
+                <div id="emailError" style="visibility: hidden;"></div>
+                <div id="messageError" style="visibility: hidden;"></div>
+                <div id="successMessage"></div>
+              </div>
+              <div class="text-center">
+                <button class="i18n" locale="contact-button" type="button" onclick="saveEmail()"></button>
+              </div>
+            </form>
+
+          </div>
 
         </div>
 
       </div>
+    </section><!-- End Contact Section -->
 
-    </div>
-  </section><!-- End Contact Section -->
+  </main><!-- End #main -->
 
-</main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
+    <div class="footer-top">
 
-  <div class="footer-top">
+      <div class="container">
 
-    <div class="container">
-
-      <div class="row  justify-content-center">
-        <div class="col-lg-6">
-          <h3>TAPALL</h3>
-          <p>Tap it, all you need.</p>
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>TAPALL</h3>
+            <p>Tap it, all you need.</p>
+          </div>
         </div>
+
       </div>
-
     </div>
-  </div>
 
-  <div class="container footer-bottom clearfix d-flex align-items-center justify-content-center">
-    <div class="copyright">
-      &copy; Copyright <strong><span>TAPALL.AI</span></strong> 深圳市塔普智能科技有限公司
+    <div class="container footer-bottom clearfix d-flex align-items-center justify-content-center">
+      <div class="copyright">
+        &copy; Copyright <strong><span>TAPALL.AI</span></strong> 深圳市塔普智能科技有限公司
+      </div>
     </div>
-  </div>
-</footer><!-- End Footer -->
+  </footer><!-- End Footer -->
 
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-    class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/purecounter/purecounter.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-<script src="assets/js/customized-swipers.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/customized-swipers.js"></script>
 
-<!-- i18n js file -->
-<script src="./i18n/jquery.js"></script>
-<script src="./i18n/jquery.i18n.properties.js"></script>
-<script src="./i18n/lang-sel.js"></script>
+  <!-- i18n js file -->
+  <script src="./i18n/jquery.js"></script>
+  <script src="./i18n/jquery.i18n.properties.js"></script>
+  <script src="./i18n/lang-sel.js"></script>
 
-<!-- contact js file -->
-<script src="./forms/upload_contact.js"></script>
+  <!-- contact js file -->
+  <script src="./forms/upload_contact.js"></script>
 </body>
 
 </html>
