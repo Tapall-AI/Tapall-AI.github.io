@@ -1,13 +1,35 @@
 .portfolio-new .portfolio-block {
-  display: flex;
-  justify-content: center;
   padding: 30px 60px;
   background-image: url("/assets/img/portfolio-back.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: 100% 100%;
 }
-
+.portfolio-new .portfolio-customization {
+  position: relative;
+}
+.portfolio-new .portfolio-customization h2 {
+  font-weight: 700;
+  font-size: 42px;
+  color: #151515;
+}
+.portfolio-new .portfolio-customization img {
+  object-fit: contain;
+  width: 100%;
+}
+.portfolio-new .portfolio-customization .cust-detail {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.portfolio-new .portfolio-block .portfolio-item{
+  display: flex;
+  justify-content: center;
+}
 .portfolio-new .portfolio-block .portfolio-info {
   flex: 0 0 50%;
   padding: 0 30px;
