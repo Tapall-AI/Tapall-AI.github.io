@@ -346,8 +346,9 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #000;
   font-size: 28px;
+  font-weight: bold;
   cursor: pointer;
   display: none;
   line-height: 0;

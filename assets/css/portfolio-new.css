@@ -1,0 +1,39 @@
+.portfolio-new .portfolio-block {
+  display: flex;
+  justify-content: center;
+  padding: 30px 60px;
+  background-image: url("/assets/img/portfolio-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio-new .portfolio-block .portfolio-info {
+  flex: 0 0 50%;
+  padding: 0 30px;
+}
+.portfolio-new .portfolio-block .portfolio-swiper {
+  flex: 0 0 45%;
+}
+
+.portfolio-new .portfolio-block .portfolio-info h1 {
+  font-family: Alibaba-PuHuiTi, Alibaba-PuHuiTi;
+  font-weight: 700;
+  font-size: 42px;
+  color: #000000;
+  background: linear-gradient(246.449671142044deg, #0059EF 0%, #00AAFD 100%);
+  -webkit-background-clip: text;
+  /* 将渐变应用到文字上 */
+  -webkit-text-fill-color: transparent;
+  /* 设置文字颜色为透明，显示渐变效果 */
+}
+
+.portfolio-new .portfolio-block .portfolio-info p {
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  line-height: 36px;
+  text-align: left;
+  font-style: normal;
+}

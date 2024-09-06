@@ -5,7 +5,7 @@ function initSwiper(selector) {
         observer: true,
         observeParents: true,
         // Enable mousewheel operation
-        mousewheel: true,
+        mousewheel: false,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
