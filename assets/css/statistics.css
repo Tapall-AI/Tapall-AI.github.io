@@ -1,0 +1,162 @@
+/*--------------------------------------------------------------
+# statistics
+--------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  .statistics {
+    display: none;
+  }
+  .statistics-mobile {
+    display: grid;
+  }
+}
+
+@media (min-width: 769px) {
+  .statistics {
+    display: block;
+  }
+  .statistics-mobile {
+    display: none;
+  }
+}
+
+.statistics {
+  position: absolute;
+  bottom: -80px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 42px 0;
+}
+
+.statistics .statistics-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.statistics .statistics-item {
+  text-align: center;
+}
+
+
+.statistics .statistics-item .detail {
+  font-family: PingFangSC, PingFang SC;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.statistics .statistics-item .detail .num {
+  font-family: D-DINCondensed, D-DINCondensed;
+  font-weight: bold;
+  font-size: 58px;
+  color: #000000;
+  line-height: 63px;
+}
+
+
+.statistics .statistics-item .detail .unit {
+  font-weight: 500;
+  font-size: 16px;
+  color: #00AAFD;
+  line-height: 22px;
+}
+
+.statistics .statistics-item .title {
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+/* For small screen */
+
+.statistics-mobile {
+  position: absolute;
+  bottom: -180px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.07);
+  border-radius: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  height: 430px;
+  width: 95%;
+  padding: 30px;
+}
+
+.statistics-mobile .detail {
+  text-align: center;
+  margin: auto;
+}
+
+.statistics-mobile .detail .num {
+  font-family: D-DINCondensed, D-DINCondensed;
+  font-weight: bold;
+  font-size: 74px;
+  color: #000000;
+  line-height: 81px;
+  font-style: normal;
+  display: inline;
+  width: fit-content;
+}
+
+.statistics-mobile .detail .unit {
+  font-weight: 500;
+  font-size: 21px;
+  color: #00AAFD;
+  line-height: 29px;
+  display: inline;
+  font-style: normal;
+  width: fit-content;
+}
+
+.statistics-mobile .title {
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  font-size: 21px;
+  color: #000000;
+  line-height: 29px;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+.statistics-mobile #grid-1 {
+  border-width: 0px;
+  border-style: solid;
+  border-color: #ccc;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  padding-top: 20px;
+}
+
+.statistics-mobile #grid-2 {
+  border-width: 0px;
+  border-style: solid;
+  border-color: #ccc;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  padding-top: 20px;
+}
+
+.statistics-mobile #grid-3 {
+  border-width: 0px;
+  border-style: solid;
+  border-color: #ccc;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  align-content: end;
+  padding-bottom: 20px;
+}
+
+.statistics-mobile #grid-4 {
+  border-width: 0px;
+  border-style: solid;
+  border-color: #ccc;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  align-content: end;
+  padding-bottom: 20px;
+}

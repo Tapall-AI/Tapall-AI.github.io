@@ -465,14 +465,10 @@ h6 {
   background: url("../img/hero-bg.png") top center;
   background-size: cover;
   position: relative;
-  /*margin-bottom: -70px;*/
+  margin-bottom: 70px;
 }
 
-@media (max-width: 992px) {
-  #hero {
-    margin-bottom: -60px;
-  }
-}
+
 
 /* #hero:before {
   content: "";
@@ -521,7 +517,7 @@ h6 {
 
 .hero-container .banner .banner-left,
 .hero-container .banner .banner-right {
-  flex: 1 1 40%;
+  flex: 0 1 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -530,10 +526,10 @@ h6 {
 }
 
 .hero-container .banner .banner-right {
-  flex: 1 1 60%;
+  flex: 0 1 40%;
 }
 
-.hero-container .banner .banner-right>img {
+.hero-container .banner .banner-left>img {
   width: 100%;
 }
 
@@ -559,13 +555,13 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  border-radius: 24px;
+  font-family: PingFangSC, PingFang SC;
+  border-radius: 1080px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 13px 40px;
+  padding: 20px 60px;
   /* transition: 0.5s; */
   margin-top: 30px;
   color: #fff;
@@ -583,71 +579,33 @@ h6 {
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
-    font-size: 30px;
-    line-height: 36px;
+  #hero {
+    margin-bottom: 180px;
   }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+  .hero-container {
+    padding-top: 10px;
+    justify-content: start !important;
+    align-content: center;
+  }
+  .hero-container .banner {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-container .banner .banner-left,
+  .hero-container .banner .banner-right {
+    width: 100%;
+    align-items: center;
+  }
+  .hero-container .banner .banner-left {
+    margin-bottom: 100px;
+  }
+  .btn-get-started {
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    color: #FFFFFF;
+    line-height: 42px;
   }
 }
-
-
-/*--------------------------------------------------------------
-# statistics
---------------------------------------------------------------*/
-.statistics {
-  width: 90%;
-  background: #FFFFFF;
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.07);
-  border-radius: 20px;
-  margin: 0 auto;
-  padding: 42px 0
-}
-
-.statistics .statistics-list {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-
-.statistics .statistics-item {
-  text-align: center;
-}
-
-
-.statistics .statistics-item .detail {
-  font-family: PingFangSC, PingFang SC;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.statistics .statistics-item .detail .num {
-  font-family: D-DINCondensed, D-DINCondensed;
-  font-weight: bold;
-  font-size: 58px;
-  color: #000000;
-  line-height: 63px;
-}
-
-
-.statistics .statistics-item .detail .unit {
-  font-weight: 500;
-  font-size: 16px;
-  color: #00AAFD;
-  line-height: 22px;
-}
-
-.statistics .statistics-item .title {
-  font-family: PingFangSC, PingFang SC;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 22px;
-}
-
 
 /*--------------------------------------------------------------
 # Sections General
