@@ -68,7 +68,7 @@
             <li><a class="nav-link scrollto i18n" href="#about" locale="nav-about"></a></li>
             <li><a class="nav-link scrollto i18n" href="#portfolio" locale="nav-portfolio"></a></li>
             <li style="margin-right: auto;">
-              <a class="nav-link scrollto i18n" href="#contact" locale="nav-contact"></a>
+              <a class="nav-link scrollto i18n" href="#footer" locale="nav-contact"></a>
             </li>
             <li class="dropdown" id="lang-selector">
               <a href="#">
@@ -83,22 +83,6 @@
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
-
-
-      <!--      <div class="lang-div">-->
-      <!--        <nav class="navbar">-->
-      <!--          <ul>-->
-      <!--            <li class="dropdown" id="lang-selector">-->
-      <!--              <a href="#"><span class="i18n" locale="nav-lang"></span><i class="bi bi-chevron-right"></i></a>-->
-      <!--              <ul>-->
-      <!--                <li value="zh-CN"><a href="#">中文</a></li>-->
-      <!--                <li value="en"><a href="#">English</a></li>-->
-      <!--              </ul>-->
-      <!--            </li>-->
-      <!--          </ul>-->
-      <!--        </nav>-->
-      <!--      </div>-->
-
     </div>
   </header>
   <!-- End Header -->
@@ -304,7 +288,7 @@
         <div class="portfolio-info">
           <h1 class="i18n" locale="portfolio-ai-insertion"></h1>
           <p class="i18n" locale="pai-info"></p>
-          <a href="https://www.kuosanyinzi.com" class="btn-get-started">
+          <a href="https://www.kuosanyinzi.com" class="btn">
             <span class=" scrollto i18n" locale="TryItNow">
             </span>
             <i class="bi bi-chevron-right"></i>
@@ -338,7 +322,7 @@
         <div class="portfolio-info">
           <h1 class="i18n" locale="portfolio-meta-human"></h1>
           <p class="i18n" locale="pmh-info"></p>
-          <a href="https://www.kuosanyinzi.com" class="btn-get-started">
+          <a href="https://www.kuosanyinzi.com" class="btn">
             <span class=" scrollto i18n" locale="TryItNow">
             </span>
             <i class="bi bi-chevron-right"></i>
@@ -365,7 +349,7 @@
         <div class="portfolio-info">
           <h1 class="i18n" locale="portfolio-t2v-gen"></h1>
           <p class="i18n" locale="ptg-info"></p>
-          <a href="https://www.kuosanyinzi.com" class="btn-get-started">
+          <a href="https://www.kuosanyinzi.com" class="btn">
             <span class=" scrollto i18n" locale="TryItNow">
             </span>
             <i class="bi bi-chevron-right"></i>
@@ -391,8 +375,8 @@
       <img src="assets/img/xuqiudingzhi-back.png" alt=""/>
       <div class="cust-detail">
         <h2>更多定制需求，请联系我们</h2>
-        <a href="https://www.kuosanyinzi.com" class="btn-get-started">
-            <span class="scrollto i18n" locale="nav-contact">
+        <a href="" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <span class="i18n" locale="nav-contact">
             </span>
           <i class="bi bi-chevron-right"></i>
         </a>
@@ -472,11 +456,45 @@
     </div>
   </section>End Contact Section -->
 
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" style="border-radius: 24px; padding: 20px 30px;">
+        <div class="modal-header" style="border-bottom: 0;">
+          <h1 class="modal-title fs-5 i18n" id="staticBackdropLabel" locale="nav-contact" style="font-size: 30px;font-weight: 600;"></h1>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column gap-1">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control i18n-input" id="name" attr-to-locale="placeholder"
+                   key-name="name-placeholder">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control i18n-input" name="email" id="email"
+                   attr-to-locale="placeholder" key-name="email-placeholder">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control i18n-input" name="subject" id="subject"
+                   attr-to-locale="placeholder" key-name="subject-placeholder">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control i18n-input" name="message" rows="5" id="message"
+                      attr-to-locale="placeholder" key-name="msg-placeholder"></textarea>
+          </div>
+          <a class="btn i18n" locale="contact-button"></a>
+        </div>
+        <!--        <div class="modal-footer">-->
+        <!--          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+        <!--          <button type="button" class="btn btn-primary">Understood</button>-->
+        <!--        </div>-->
+      </div>
+    </div>
+  </div>
+
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
-
   <div class="footer-top">
     <div class="container d-flex justify-content-between">
       <div>
@@ -504,10 +522,11 @@
     </div>
   </div>
   <div class="footer-top-mobile">
-    <div class="accordion container" id="accordionExample">
+    <div class="accordion container" id="accordion-footer">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <text class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <text class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
             关于我们
           </text>
         </h2>
@@ -520,7 +539,8 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
-          <text class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <text class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
             产品
           </text>
         </h2>
@@ -533,7 +553,8 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
-          <text class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <text class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
             联系我们
           </text>
         </h2>

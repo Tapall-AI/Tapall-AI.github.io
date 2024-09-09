@@ -52,19 +52,19 @@ document.querySelectorAll('.portfolio-swiper').forEach(
     }
 );
 
-document.querySelectorAll('.nav-link').forEach(function (tab) {
-    tab.addEventListener('click', function () {
-        // 延迟一段时间以确保标签页切换完成
-        setTimeout(function () {
-            let activeSwiperEle = document.querySelector(tab.getAttribute('href')).querySelector('.portfolio-swiper');
-            if (activeSwiperEle && activeSwiperEle.swiper) {
-                let currentSwiper = activeSwiperEle.swiper;
-                let video = currentSwiper.slides[currentSwiper.activeIndex].querySelector('.portfolio-video');
-                if (video) {
-                    video.currentTime = 0;
-                    video.play();
-                }
-            }
-        }, 50);
-    });
-});
+// document.querySelectorAll('.nav-link').forEach(function (tab) {
+//     tab.addEventListener('click', function () {
+//         // 延迟一段时间以确保标签页切换完成
+//         setTimeout(function () {
+//             let activeSwiperEle = document.querySelector(tab.getAttribute('href')).querySelector('.portfolio-swiper');
+//             if (activeSwiperEle && activeSwiperEle.swiper) {
+//                 let currentSwiper = activeSwiperEle.swiper;
+//                 let video = currentSwiper.slides[currentSwiper.activeIndex].querySelector('.portfolio-video');
+//                 if (video) {
+//                     video.currentTime = 0;
+//                     video.play();
+//                 }
+//             }
+//         }, 50);
+//     });
+// });
