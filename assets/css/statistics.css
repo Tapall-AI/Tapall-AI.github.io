@@ -21,12 +21,10 @@
 }
 
 .statistics {
-  position: absolute;
-  bottom: -80px;
   background: #FFFFFF;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 42px 0;
 }
 
@@ -74,8 +72,6 @@
 /* For small screen */
 
 .statistics-mobile {
-  position: absolute;
-  bottom: -180px;
   background: #FFFFFF;
   box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.07);
   border-radius: 20px;

@@ -8,11 +8,11 @@
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #ff7f5d;
+  border: 1px solid #0059EF;
 }
 
 .portfolio-swiper .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ff7f5d;
+  background-color: #0059EF;
 }
 
 .portfolio-swiper .swiper-button-prev {
@@ -21,7 +21,7 @@
   left: 0;
   top: 0;
   margin-top: 0;
-  color: #ff7f5d;
+  color: #0059EF;
   opacity: 0;
   background-color: rgba(94, 94, 94, 0.3);
   transition: ease-out 0.3s;
@@ -38,7 +38,7 @@
   right: 0;
   top: 0;
   margin-top: 0;
-  color: #ff7f5d;
+  color: #0059EF;
   opacity: 0;
   background-color: rgba(94, 94, 94, 0.3);
   transition: ease-out 0.3s;
