@@ -126,7 +126,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   background: rgba(255, 255, 255, 0.87);
-  /*backdrop-filter: blur(3px);*/
+  backdrop-filter: blur(6px);
   transition: all 0.5s;
   z-index: 997;
   position: relative;
@@ -137,6 +137,7 @@ h6 {
 @media (max-width: 992px) {
   #header {
     height: 60px;
+    backdrop-filter: unset;
   }
 }
 

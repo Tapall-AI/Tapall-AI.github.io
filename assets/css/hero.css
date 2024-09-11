@@ -21,11 +21,6 @@
 }
 
 #hero .hero-container {
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*top: 0;*/
-  /*left: 15px;*/
-  /*right: 15px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,19 +50,21 @@
   align-items: center;
 }
 
-.hero-container .banner .banner-left,
+.hero-container .banner .banner-left {
+  flex: 0 1 40%;
+  height: 100%;
+  order: 2;
+}
+
 .hero-container .banner .banner-right {
-  flex: 0 1 50%;
+  flex: 1 0 50%;
+  padding: 10px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-
-.hero-container .banner .banner-right {
-  flex: 1 1 40%;
-  padding: 10px;
+  order: 1;
 }
 
 .hero-container .banner .banner-left>img {
@@ -78,12 +75,9 @@
   font-family: Alibaba-PuHuiTi, Alibaba-PuHuiTi;
   font-size: 51px;
   color: #000000;
-  text-align: left;
   background: linear-gradient(246.449671142044deg, #0059EF 0%, #00AAFD 100%);
   -webkit-background-clip: text;
-  /* 将渐变应用到文字上 */
   -webkit-text-fill-color: transparent;
-  /* 设置文字颜色为透明，显示渐变效果 */
   margin-bottom: 16px;
 }
 
@@ -99,26 +93,35 @@
   }
   .hero-container {
     padding-top: 10px;
-    justify-content: start !important;
     align-content: center;
   }
   .hero-container .banner {
     width: 100%;
     flex-direction: column;
   }
-  .hero-container .banner .banner-left,
+  .hero-container .banner .banner-left {
+    width: 100%;
+    align-items: center;
+    order: 1;
+  }
   .hero-container .banner .banner-right {
     width: 100%;
     align-items: center;
+    order: 2;
   }
   .hero-container .banner .banner-left {
     margin-bottom: 50px;
   }
   #hero .btn-get-started {
     font-weight: 600 !important;
-    font-size: 30px !important;
-    color: #FFFFFF;
-    line-height: 42px;
+    font-size: 20px !important;
+    padding: 15px 40px;
     margin-bottom: 215px !important;
+  }
+  #hero .hero-container .blue-title {
+    font-size: 32px;
+  }
+  #hero .hero-container .black-title {
+    font-size: 20px;
   }
 }
