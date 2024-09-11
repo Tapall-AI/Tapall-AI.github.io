@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --color-light-blue: #00AAFD;
+  --color-deep-blue: #0059EF;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -18,12 +22,12 @@ body {
 }
 
 a {
-  color: #0059EF;
+  color: var(--color-light-blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffa790;
+  color: var(--color-deep-blue);
   text-decoration: none;
 }
 
@@ -94,7 +98,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ff7f5d;
+  background: #00AAFD;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -108,7 +112,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ff9f86;
+  background: #0059EF;
   color: #fff;
 }
 
