@@ -1,6 +1,6 @@
 .portfolio-new .portfolio-block {
   padding-bottom: 130px;
-  background-image: url("/assets/img/portfolio-back.png");
+  background-image: url("../img/portfolio-back.png");
   background-size: 100% 100%;
 }
 
@@ -46,9 +46,9 @@
 }
 
 .portfolio-new .portfolio-customization {
-  background: url("/assets/img/xuqiudingzhi-back.png");
-  background-size: cover;
-  padding: 30px 0;
+  background: url("../img/xuqiudingzhi-back.png");
+  background-size: contain;
+  padding: 80px 0;
 }
 
 .portfolio-new .portfolio-customization h2 {
