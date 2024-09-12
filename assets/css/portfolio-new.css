@@ -25,6 +25,7 @@
   flex: 0 0 45%;
   align-self: center;
   border-radius: 24px;
+  max-height: 400px;
 }
 
 .portfolio-new .portfolio-block .portfolio-info h3 {
@@ -107,5 +108,13 @@
 
 .swiper-slide {
   line-height: 0;
+  width: fit-content;
 }
 
+
+.portfolio-video {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 400px;
+  align-self: center;
+}

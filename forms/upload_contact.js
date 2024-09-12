@@ -19,6 +19,8 @@ function validate() {
         emailEle.setCustomValidity('Invalid email');
         isValid = false;
     } else {
+        emailEle.classList.remove('is-invalid');
+        emailEle.classList.add('is-valid');
         emailEle.setCustomValidity('');
     }
     if (messageEle.value.length > 500) {
@@ -79,6 +81,7 @@ function saveEmail() {
     Array.prototype.slice.call(forms)
         .forEach(function (form) {
             form.addEventListener('submit', function (event) {
+                form.classList.remove('was-validated');
                 event.preventDefault();
                 event.stopPropagation();
                 if (!form.checkValidity() || !validate()) {

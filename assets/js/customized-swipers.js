@@ -4,8 +4,10 @@ function initSwiper(selector) {
         // 同步更新 active 状态
         observer: true,
         observeParents: true,
-        // Enable mousewheel operation
+        // Enable mousewheel operation? NO
         mousewheel: false,
+        // Set number of slides per view according to their width
+        slidesPerView: 'auto',
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -16,12 +18,11 @@ function initSwiper(selector) {
         },
         on: {
             afterInit: function () {
-                console.log('init')
                 if (this.slides) {
                     this.slides.forEach(
                         function (slide, index) {
                             let video = slide.querySelector('.portfolio-video');
-                            if (video && index === 0) {
+                            if (video && (index === 0 || index === 1)) {
                                 video.play();
                             }
                         }
@@ -41,6 +42,11 @@ function initSwiper(selector) {
                 let currentVideo = this.slides[this.activeIndex].querySelector('.portfolio-video');
                 currentVideo.currentTime = 0;
                 currentVideo.play();
+                let nextVideo = this.slides[this.activeIndex + 1].querySelector('.portfolio-video');
+                if(nextVideo) {
+                    nextVideo.currentTime = 0;
+                    nextVideo.play();
+                }
             }
         },
     })
