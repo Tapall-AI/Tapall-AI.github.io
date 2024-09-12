@@ -92,7 +92,7 @@
 .statistics-mobile .detail .num {
   font-family: D-DINCondensed, D-DINCondensed;
   font-weight: bold;
-  font-size: 44px;
+  font-size: 2rem;
   color: #000000;
   line-height: 81px;
   font-style: normal;
@@ -102,7 +102,7 @@
 
 .statistics-mobile .detail .unit {
   font-weight: 500;
-  font-size: 21px;
+  font-size: 1rem;
   color: #00AAFD;
   line-height: 29px;
   display: inline;
@@ -113,7 +113,7 @@
 .statistics-mobile .title {
   font-family: PingFangSC, PingFang SC;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 1rem;
   color: #000000;
   line-height: 29px;
   letter-spacing: 1px;
@@ -126,7 +126,7 @@
   border-color: #ccc;
   border-right-width: 1px;
   border-bottom-width: 1px;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .statistics-mobile #grid-2 {
@@ -135,7 +135,7 @@
   border-color: #ccc;
   border-left-width: 1px;
   border-bottom-width: 1px;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .statistics-mobile #grid-3 {
@@ -145,7 +145,7 @@
   border-right-width: 1px;
   border-top-width: 1px;
   align-content: end;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .statistics-mobile #grid-4 {
@@ -155,5 +155,5 @@
   border-left-width: 1px;
   border-top-width: 1px;
   align-content: end;
-  padding: 20px;
+  padding: 1rem;
 }

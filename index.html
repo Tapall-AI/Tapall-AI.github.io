@@ -394,78 +394,6 @@
     </div>
   </section><!-- End Portfolio Section -->
 
-  <!-- ======= Contact Section
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="section-title">
-        <h2 class="i18n" locale="nav-contact"></h2>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-lg-4">
-          <div class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-              <h4 class="i18n" locale="location"></h4>
-              <p class="i18n" locale="location-info"></p>
-            </div>
-
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4 class="i18n" locale="email"></h4>
-              <p>service@tapall.ai</p>
-            </div>
-
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4 class="i18n" locale="wechat"></h4>
-              <img src="./assets/img/contact_qrcode.png" alt="contact-qrcode"
-                   style="margin-left: 5%; object-fit: fill; max-width: 50%;"/>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-8 mt-5 mt-lg-0">
-
-          <form class="my-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control i18n-input" id="name" attr-to-locale="placeholder"
-                       key-name="name-placeholder">
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control i18n-input" name="email" id="email"
-                       attr-to-locale="placeholder" key-name="email-placeholder">
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control i18n-input" name="subject" id="subject"
-                     attr-to-locale="placeholder" key-name="subject-placeholder">
-            </div>
-            <div class="form-group mt-3">
-                <textarea class="form-control i18n-input" name="message" rows="5" id="message"
-                          attr-to-locale="placeholder" key-name="msg-placeholder"></textarea>
-            </div>
-            <div class="my-3">
-              <div id="nameError" style="visibility: hidden;"></div>
-              <div id="emailError" style="visibility: hidden;"></div>
-              <div id="messageError" style="visibility: hidden;"></div>
-              <div id="successMessage"></div>
-            </div>
-            <div class="text-center">
-              <button class="i18n" locale="contact-button" type="button" onclick="saveEmail()"></button>
-            </div>
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>End Contact Section -->
-
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
        aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -475,29 +403,53 @@
               style="font-size: 30px;font-weight: 600;"></h1>
           <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body d-flex flex-column gap-1">
-          <div class="form-group">
-            <input type="text" name="name" class="form-control i18n-input" id="name" attr-to-locale="placeholder"
-                   key-name="name-placeholder">
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control i18n-input" name="email" id="email"
-                   attr-to-locale="placeholder" key-name="email-placeholder">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control i18n-input" name="subject" id="subject"
-                   attr-to-locale="placeholder" key-name="subject-placeholder">
-          </div>
-          <div class="form-group">
-            <textarea class="form-control i18n-input" name="message" rows="5" id="message"
-                      attr-to-locale="placeholder" key-name="msg-placeholder"></textarea>
-          </div>
-          <a class="btn i18n" locale="contact-button"></a>
+        <div class="modal-body">
+          <form action="" id="contact-form" class="d-flex flex-column gap-2 needs-validation" novalidate>
+            <div class="">
+<!--              <label for="name" class="col-form-label col-2">Name</label>-->
+<!--              <div class="col-10">-->
+                <input id="name" name="name" type="text" class="form-control i18n-input"
+                       attr-to-locale="placeholder" key-name="name-placeholder" required>
+                <div class="invalid-feedback">
+                  Please input your name.
+                </div>
+<!--              </div>-->
+            </div>
+            <div class="">
+              <!--              <label for="email" class="col-form-label col-2">Email</label>-->
+              <!--              <div class="col-10">-->
+              <input type="email" class="form-control i18n-input" name="email" aria-label="email" id="email"
+                     attr-to-locale="placeholder" key-name="email-placeholder" required>
+              <div class="invalid-feedback">
+                Please input a valid email address.
+              </div>
+              <!--              </div>-->
+            </div>
+            <div class="">
+              <!--              <lable for="subject" class="col-form-label col-2">Subject</lable>-->
+              <!--              <div class="col-10">-->
+              <input type="text" class="form-control i18n-input" name="subject" aria-label="subject" id="subject"
+                     attr-to-locale="placeholder" key-name="subject-placeholder" required>
+              <div class="invalid-feedback">
+                Please input the subject.
+              </div>
+              <!--              </div>-->
+            </div>
+            <div class="">
+              <!--              <label for="message" class="col-form-label col-2">Message</label>-->
+              <!--              <div class="col-10">-->
+              <textarea class="form-control i18n-input" name="message" aria-label="message" rows="5" id="message"
+                        attr-to-locale="placeholder" key-name="msg-placeholder" required></textarea>
+              <div class="invalid-feedback">
+                Please input message.
+              </div>
+              <!--              </div>-->
+            </div>
+            <button class="btn btn-primary i18n" type="submit" locale="contact-button"></button>
+            <div id="contact-feedback-success" style="display: none"></div>
+            <div id="contact-feedback-fail" style="display: none"></div>
+          </form>
         </div>
-        <!--        <div class="modal-footer">-->
-        <!--          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-        <!--          <button type="button" class="btn btn-primary">Understood</button>-->
-        <!--        </div>-->
       </div>
     </div>
   </div>
