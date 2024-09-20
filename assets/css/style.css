@@ -464,29 +464,7 @@ h6 {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 
-#portfolio .btn-get-started,
-#hero .btn-get-started {
-  font-family: PingFangSC, PingFang SC;
-  border-radius: 1080px;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 20px 60px;
-  /* transition: 0.5s; */
-  margin-top: 30px;
-  color: #fff;
-  background: linear-gradient(336deg, #0059EF 0%, #00AAFD 100%);
-}
-
-#portfolio .btn-get-started:hover,
-#hero .btn-get-started:hover {
-  background: #0059EF;
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1491,7 +1469,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  font-size: 14px;
+  font-size: 1rem;
   position: relative;
 }
 
@@ -1525,11 +1503,11 @@ section {
 
 #footer a{
   color: #9d9d9d;
+  transition: ease-in-out 0.3s;
 }
 
 #footer a:hover{
   color: #00AAFD;
-  transition: ease-in-out 0.3s;
 }
 
 #footer .footer-bottom {

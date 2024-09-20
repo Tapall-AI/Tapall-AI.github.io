@@ -6,6 +6,12 @@ function initSwiper(selector) {
         observeParents: true,
         // Enable mousewheel operation? NO
         mousewheel: false,
+        autoplay: {
+            reverseDirection: true,
+        },
+        // freeMode: {
+        //     enabled: true,
+        // },
         // Set number of slides per view according to their width
         slidesPerView: 'auto',
         navigation: {
@@ -42,7 +48,7 @@ function initSwiper(selector) {
                 let currentVideo = this.slides[this.activeIndex].querySelector('.portfolio-video');
                 currentVideo.currentTime = 0;
                 currentVideo.play();
-                let nextVideo = this.slides[this.activeIndex + 1].querySelector('.portfolio-video');
+                let nextVideo = this.slides[this.activeIndex + 1]?.querySelector('.portfolio-video');
                 if(nextVideo) {
                     nextVideo.currentTime = 0;
                     nextVideo.play();
