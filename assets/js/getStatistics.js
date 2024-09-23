@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    const targetUrl='http://www.kuosanyinzi.com/tap-serve/tap/open/home/tags';
+    const targetUrl='https://www.kuosanyinzi.com/tap-serve/tap/open/home/tags';
     $.ajax({
         url: targetUrl,
         type: "GET",
