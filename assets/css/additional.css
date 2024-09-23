@@ -11,6 +11,20 @@
   background: #ff9377;
 }
 
-/*.lang-div {*/
-/*  margin-right: 10%;*/
-/*}*/
+.modal .btn {
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 20px;
+  font-style: normal;
+  text-align: center;
+  min-height: 48px;
+  min-width: 188px;
+  background: linear-gradient( 336deg, #0059EF 0%, #00AAFD 100%);
+  border-radius: 4px;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

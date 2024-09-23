@@ -2,10 +2,6 @@
 * 绑定点击事件
 * */
 const liList = document.querySelectorAll('#lang-selector li');
-let selector = document.getElementById('language');
-if (!selector) {
-    console.log('wrong selector')
-}
 liList.forEach(li => {
     li.addEventListener('click', function () {
         // $('.language').val($(this).attr('value'));
@@ -130,15 +126,14 @@ var execI18n = function () {
         mode: 'map', //用Map的方式使用资源文件中的值
         language: i18nLanguage,
         callback: function () {//加载成功后设置显示内容
+
             var insertEle = $(".i18n");
             console.log(".i18n 写入中...");
             insertEle.each(function () {
                 // 根据i18n元素的 locale 获取内容写入
                 $(this).html($.i18n.prop($(this).attr('locale')));
             });
-            console.log("写入完毕");
 
-            console.log(".i18n-input 写入中...");
             var insertInputEle = $(".i18n-input");
             insertInputEle.each(function () {
                 var selectAttr = $(this).attr('attr-to-locale');
@@ -157,7 +152,7 @@ $(function () {
     // run i18 translation
     execI18n();
     // set selected language to cached value
-    $("#language option[value=" + i18nLanguage + "]").attr("selected", true);
+    // $("#language option[value=" + i18nLanguage + "]").attr("selected", true);
 });
 
 /* Change language */

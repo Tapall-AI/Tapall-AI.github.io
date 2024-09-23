@@ -1,0 +1,189 @@
+#hero {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  position: relative;
+  margin-bottom: -80px;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+#hero:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(262deg,#F7D6D6 5.33%,#F3E7E9 20.63%,#A3C6FF 61.02%,#F3E7E9 87.93%);
+  z-index: -1;
+}
+
+#hero .hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#hero h2 {
+  color: #eee;
+  font-size: 24px;
+}
+
+#hero .hero-container .banner {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-container .banner .banner-left {
+  flex: 0 1 40%;
+  height: 100%;
+  order: 2;
+}
+
+.hero-container .banner .banner-right {
+  flex: 1 0 50%;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  order: 1;
+}
+
+.hero-container .banner .banner-left>img {
+  width: 100%;
+}
+
+#hero .hero-container .blue-title {
+  font-family: Alibaba-PuHuiTi;
+  font-size: 51px;
+  color: #000000;
+  background: linear-gradient(246.449671142044deg, #0059EF 0%, #00AAFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+#hero .hero-container .black-title {
+  color: #000;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+#hero .btn-get-started {
+  font-family: PingFangSC, PingFang SC;
+  border-radius: 1080px;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 20px 60px;
+  margin-top: 30px;
+  color: #fff;
+  background: #00AAFD;
+  transition: ease-in-out 0.3s;
+}
+
+#hero .btn-get-started:hover {
+  background: #0059EF;
+}
+/*小屏幕*/
+@media (max-width: 768px) {
+  #hero {
+    margin-bottom: -195px;
+  }
+  .hero-container {
+    padding-top: 10px;
+    align-content: center;
+  }
+  .hero-container .banner {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-container .banner .banner-left {
+    width: 100%;
+    align-items: center;
+    order: 1;
+  }
+  .hero-container .banner .banner-right {
+    width: 100%;
+    align-items: center;
+    order: 2;
+  }
+  .hero-container .banner .banner-left {
+    margin-bottom: 50px;
+  }
+  #hero .btn-get-started {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    padding: 15px 40px;
+    margin-bottom: 215px !important;
+  }
+  #hero .hero-container .blue-title {
+    font-size: 2.8rem;
+  }
+  #hero .hero-container .black-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media(max-width: 550px) {
+  #hero .hero-container .blue-title {
+    font-size: 2rem;
+  }
+  #hero .hero-container .black-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media(max-width: 375px) {
+  #hero .hero-container .blue-title {
+    font-size: 1.5rem;
+  }
+  #hero .hero-container .black-title {
+    font-size: 1.2rem;
+  }
+  #hero .btn-get-started {
+    font-size: 16px!important;
+  }
+}
+/*大屏幕*/
+@media (min-width: 769px) {
+  #hero .hero-container .blue-title {
+    font-size: 2.4rem;
+  }
+  #hero .hero-container .black-title {
+    font-size: 2.0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero .hero-container .blue-title {
+    font-size: 2.8rem;
+  }
+  #hero .hero-container .black-title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #hero .hero-container .blue-title {
+    font-size: 4rem;
+  }
+  #hero .hero-container .black-title {
+    font-size: 2.8rem;
+  }
+}
