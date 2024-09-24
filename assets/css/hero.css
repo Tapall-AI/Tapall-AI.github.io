@@ -16,7 +16,9 @@
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(262deg,#F7D6D6 5.33%,#F3E7E9 20.63%,#A3C6FF 61.02%,#F3E7E9 87.93%);
+  /*background: linear-gradient(262deg,#F7D6D6 5.33%,#F3E7E9 20.63%,#A3C6FF 61.02%,#F3E7E9 87.93%);*/
+  background: url("/assets/img/hero-bg.png") no-repeat;
+  background-size: 100% 100%;
   z-index: -1;
 }
 
@@ -68,7 +70,7 @@
 }
 
 #hero .hero-container .blue-title {
-  font-family: Alibaba-PuHuiTi;
+  font-family: "Open Sans", sans-serif;
   font-size: 51px;
   color: #000000;
   background: linear-gradient(246.449671142044deg, #0059EF 0%, #00AAFD 100%);
@@ -84,7 +86,7 @@
 }
 
 #hero .btn-get-started {
-  font-family: PingFangSC, PingFang SC;
+  font-family: "Open Sans", sans-serif;
   border-radius: 1080px;
   font-weight: 800;
   font-size: 20px;

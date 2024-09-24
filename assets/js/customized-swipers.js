@@ -8,12 +8,15 @@ function initSwiper(selector) {
         mousewheel: false,
         autoplay: {
             reverseDirection: true,
+            delay: 10000
         },
-        // freeMode: {
-        //     enabled: true,
-        // },
+        slideToClickedSlide: true,
+        // centeredSlides: true,
         // Set number of slides per view according to their width
         slidesPerView: 'auto',
+        // lazy: {
+        //     loadPrevNext: true,
+        // },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -46,13 +49,14 @@ function initSwiper(selector) {
                     }
                 );
                 let currentVideo = this.slides[this.activeIndex].querySelector('.portfolio-video');
-                currentVideo.currentTime = 0;
+                // currentVideo.currentTime = 0;
                 currentVideo.play();
                 let nextVideo = this.slides[this.activeIndex + 1]?.querySelector('.portfolio-video');
                 if(nextVideo) {
                     nextVideo.currentTime = 0;
                     nextVideo.play();
                 }
+
             }
         },
     })

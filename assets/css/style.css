@@ -59,7 +59,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #ff7f5d;
+  border: 6px solid var(--color-light-blue);
   border-top-color: white;
   border-radius: 50%;
   width: 60px;
@@ -1491,14 +1491,14 @@ section {
 }
 
 #footer .footer-top h3 {
-  font-family: PingFangSC, PingFang SC;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #000000;
   line-height: 33px;
   text-align: left;
   padding-bottom: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #footer a{
