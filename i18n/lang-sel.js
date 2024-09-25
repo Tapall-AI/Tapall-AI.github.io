@@ -163,4 +163,14 @@ function changeLang(lang) {
     });
     // location.reload();
     execI18n();
+    let t3numEles = document.getElementsByClassName('num3');
+    for (let i = 0; i < t3numEles.length; i++) {
+        let originalValue = t3numEles.item(i).innerHTML;
+        if(lang==='zh-CN') {
+            t3numEles.item(i).innerHTML = originalValue.substring(0, originalValue.length - 1);
+        }
+        else if (lang==='en') {
+            t3numEles.item(i).innerHTML = originalValue + '0';
+        }
+    }
 }
