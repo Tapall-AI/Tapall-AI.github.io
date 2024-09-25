@@ -138,7 +138,7 @@
     font-size: 2.8rem;
   }
   #hero .hero-container .black-title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -147,7 +147,7 @@
     font-size: 2rem;
   }
   #hero .hero-container .black-title {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 
@@ -156,7 +156,7 @@
     font-size: 1.5rem;
   }
   #hero .hero-container .black-title {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   #hero .btn-get-started {
     font-size: 16px!important;
@@ -165,10 +165,10 @@
 /*大屏幕*/
 @media (min-width: 769px) {
   #hero .hero-container .blue-title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
   #hero .hero-container .black-title {
-    font-size: 2.0rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -177,7 +177,7 @@
     font-size: 2.8rem;
   }
   #hero .hero-container .black-title {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -186,6 +186,6 @@
     font-size: 4rem;
   }
   #hero .hero-container .black-title {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
