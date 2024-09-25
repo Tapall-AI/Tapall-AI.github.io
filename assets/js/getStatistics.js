@@ -9,7 +9,7 @@ $(document).ready(function () {
             for (let i = 0; i < list.length; i += 4) {
                 list[i].setAttribute('data-purecounter-end', result.data['videoNum']);
                 list[i + 1].setAttribute('data-purecounter-end', result.data['materialNum']);
-                list[i + 2].setAttribute('data-purecounter-end', result.data['searchNum']);
+                list[i + 2].setAttribute('data-purecounter-end', result.data['searchNum'] * 10);
                 list[i + 3].setAttribute('data-purecounter-end', result.data['userNum']);
             }
             new PureCounter();

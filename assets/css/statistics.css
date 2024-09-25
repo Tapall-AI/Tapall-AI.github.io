@@ -58,9 +58,9 @@
 
 .statistics .statistics-item .detail .unit {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 22px;
   color: #00AAFD;
-  line-height: 22px;
+  line-height: 28px;
 }
 
 .statistics .statistics-item .title {
@@ -102,7 +102,7 @@
 
 .statistics-mobile .detail .unit {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #00AAFD;
   line-height: 29px;
   display: inline;
