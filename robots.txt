@@ -1,0 +1,21 @@
+User-agent: *
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
+# Disallow: /cgi-bin/
+
+# 允许所有用户代理抓取的路径
+Allow: /
+
+# 特定用户代理的规则（可选）
+# User-agent: Googlebot
+# Allow: /search-results/
+
+# User-agent: Baiduspider
+# Disallow: /baidu-only/
+
+# 禁止所有用户代理抓取的路径（覆盖前面的Allow规则）
+# Disallow: /
+
+# Sitemap 文件位置
+Sitemap: https://tapall.ai/sitemap.xml
