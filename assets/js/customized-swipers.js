@@ -72,10 +72,32 @@ document.querySelectorAll('.portfolio-swiper').forEach(
 initRoboticSwiper()
 
 function initRoboticSwiper() {
-    var mySwiper = new Swiper('#roboticSwiper', {
-        direction: 'vertical',
-        // allowTouchMove: false
-    })
+    // var mySwiper = new Swiper('#roboticSwiper', {
+    //     direction: 'vertical',
+    //     // allowTouchMove: false
+    // })
+    
+    var swiper = new Swiper('#roboticSwiper', {
+    	speed: 700,
+    	slidesPerView: 'auto',
+    	centeredSlides: true,
+    	on: {
+    		init: function() {
+    			this.slides.removeClass('init');
+    		},
+    	},
+    	navigation: {
+    		nextEl: '.swiper-button-next',
+    		prevEl: '.swiper-button-prev',
+    	},
+
+    });
+    swiper.$el.parent('.apple-retail')[0].onmouseover = function() {
+    	swiper.$el.addClass('mouse-hover');
+    };
+    swiper.$el.parent('.apple-retail')[0].onmouseout = function() {
+    	swiper.$el.removeClass('mouse-hover');
+    };
 }
 
 // document.querySelectorAll('.nav-link').forEach(function (tab) {
