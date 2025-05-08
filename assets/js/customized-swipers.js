@@ -52,7 +52,7 @@ function initSwiper(selector) {
                 // currentVideo.currentTime = 0;
                 currentVideo.play();
                 let nextVideo = this.slides[this.activeIndex + 1]?.querySelector('.portfolio-video');
-                if(nextVideo) {
+                if (nextVideo) {
                     nextVideo.currentTime = 0;
                     nextVideo.play();
                 }
@@ -62,11 +62,21 @@ function initSwiper(selector) {
     })
 }
 
+
 document.querySelectorAll('.portfolio-swiper').forEach(
     function (swiperContainer) {
         initSwiper(swiperContainer);
     }
 );
+
+initRoboticSwiper()
+
+function initRoboticSwiper() {
+    var mySwiper = new Swiper('#roboticSwiper', {
+        direction: 'vertical',
+        // allowTouchMove: false
+    })
+}
 
 // document.querySelectorAll('.nav-link').forEach(function (tab) {
 //     tab.addEventListener('click', function () {
